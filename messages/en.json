@@ -29,5 +29,11 @@
     "terms": "Terms of Service",
     "and": "and",
     "privacy": "Privacy Policy"
+  },
+  "Common": {
+    "language": {
+      "en": "EN",
+      "fa": "FA"
+    }
   }
 }
