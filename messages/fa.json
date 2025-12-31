@@ -1,0 +1,33 @@
+{
+  "Auth": {
+    "welcome": "خوش آمدید",
+    "subtitle": "برای ادامه وارد حساب خود شوید",
+    "google": "ورود با گوگل",
+    "moreOptions": "سایر گزینه‌ها",
+    "or": "یا ورود با",
+    "email": "ایمیل",
+    "phone": "تلفن",
+    "emailLabel": "آدرس ایمیل",
+    "phoneLabel": "شماره موبایل",
+    "otpLabel": "کد تایید",
+    "otpDesc": "صندوق ورودی یا پیامک خود را چک کنید",
+    "continue": "ادامه",
+    "signIn": "ورود",
+    "guest": "ادامه به صورت مهمان",
+    "placeholderEmail": "name@example.com",
+    "placeholderPhone": "0912 345 6789",
+    "validation": {
+      "emailRequired": "لطفا ایمیل خود را وارد کنید",
+      "emailInvalid": "آدرس ایمیل نامعتبر است",
+      "phoneRequired": "لطفا شماره موبایل خود را وارد کنید",
+      "phoneInvalid": "شماره موبایل نامعتبر است (مثلا ۰۹۱۲...)",
+      "otpLength": "کد تایید باید ۶ رقم باشد"
+    }
+  },
+  "Footer": {
+    "termsPrefix": "با ادامه دادن، شما قوانین ما را می‌پذیرید:",
+    "terms": "شرایط استفاده",
+    "and": "و",
+    "privacy": "حریم خصوصی"
+  }
+}
