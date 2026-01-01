@@ -56,14 +56,16 @@ The goal of this task is to demonstrate frontend skills, architectural decisions
 ## 🚀 Getting Started
 
 ### 1. Install dependencies
+
 ```bash
 npm install
 ```
+
 2. Run the development server
+
 ```bash
 npm run dev
 ```
-
 
 ## ⚠️ Notes
 
@@ -86,13 +88,15 @@ This project was created exclusively as a **frontend technical assessment** to d
 
 ---
 
+## 🌐 Live Demo
 
+Experience the full authentication flow, including dynamic theme switching, multi-language support (RTL/LTR), and the animated OTP interface, directly in your browser:
 
+[![Live Demo](https://img.shields.io/badge/Demo-Live_Preview-blueviolet?style=for-the-badge&logo=vercel)](https://login-task-sooty.vercel.app)
+
+🔗 **Direct Link:** [login-task-sooty.vercel.app](https://login-task-sooty.vercel.app)
 
 ## 👤 Author
 
 **Mehdi Darvishi**  
 📧 Email: mehdidarvishi2004@gmail.com
-
-
-
