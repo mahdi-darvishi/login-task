@@ -87,14 +87,7 @@ This project was created exclusively as a **frontend technical assessment** to d
 ---
 
 
-## 🌐 Live Demo
 
-You can view the live demo of this project at the link below:
-
-🔗 **Demo URL:**  
-_Add your deployed demo link here (e.g. Vercel or Netlify)_
-
-> The demo showcases the full authentication UI, including theme switching, localization, and the OTP flow.
 
 ## 👤 Author
 
