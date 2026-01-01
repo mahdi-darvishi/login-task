@@ -108,7 +108,7 @@ export default function LoginForm() {
         <AuthSocials t={t} />
 
         {/* Divider */}
-        <div className="relative py-6">
+        <div className="relative py-2 md:py-6">
           <div className="absolute inset-0 flex items-center">
             <Separator className="w-full" />
           </div>
@@ -262,7 +262,7 @@ export default function LoginForm() {
       </CardContent>
 
       {/* Footer */}
-      <CardFooter className="flex flex-col md:flex-row items-center gap-1 border-t text-muted-foreground text-xs">
+      <CardFooter className="flex flex-col md:flex-row items-center gap-1 border-t text-muted-foreground text-xs -mt-3 md:mt-0">
         <span>{t("Footer.termsPrefix")}</span>
         <div className="flex items-center gap-1">
           <Link className="underline" href={"#"}>
