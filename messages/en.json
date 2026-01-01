@@ -15,25 +15,25 @@
     "signIn": "Sign In",
     "guest": "Continue as Guest",
     "placeholderEmail": "name@example.com",
-    "placeholderPhone": "912 345 6789",
+    "placeholderPhone": "0912 345 6789",
     "validation": {
       "emailRequired": "Please enter your email",
       "emailInvalid": "Invalid email address",
       "phoneRequired": "Please enter your phone number",
       "phoneInvalid": "Invalid phone number (e.g. 0912...)",
       "otpLength": "Code must be 6 digits"
+    },
+    "Footer": {
+      "termsPrefix": "By clicking continue, you agree to our",
+      "terms": "Terms of Service",
+      "and": "and",
+      "privacy": "Privacy Policy"
     }
-  },
-  "Footer": {
-    "termsPrefix": "By clicking continue, you agree to our",
-    "terms": "Terms of Service",
-    "and": "and",
-    "privacy": "Privacy Policy"
   },
   "Common": {
     "language": {
-      "en": "EN",
-      "fa": "FA"
+      "en": "English",
+      "fa": "Persian"
     }
   }
 }
