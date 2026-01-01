@@ -7,15 +7,14 @@ export default async function LoginPage() {
   return (
     <div className="md:py-6 md:px-7">
       <nav className="flex  items-center justify-between ">
-        <div className="flex gap-6 items-center">
-          <LangToggle />
-          <ThemeToggle />
-        </div>
         <Button>AI</Button>
+        <div className="flex gap-6 items-center">
+          <ThemeToggle />
+          <LangToggle />
+        </div>
       </nav>
 
-      <main className="flex items-center justify-center min-h-screen">
-        <h1 className="text-xl font-bold"></h1>
+      <main className="flex items-center justify-center min-h-screen md:-mt-24">
         <AuthLogin />
       </main>
     </div>
