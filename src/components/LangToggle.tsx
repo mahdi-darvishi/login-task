@@ -1,16 +1,15 @@
 "use client";
 
-import { useTranslations } from "next-intl";
 import { usePathname, useRouter } from "next/navigation";
-import { Label } from "./ui/label";
 import { Switch } from "./ui/switch";
+import { Label } from "./ui/label";
+import { useTranslations, useLocale } from "next-intl";
 
 const SUPPORTED_LOCALES = ["en", "fa"] as const;
 
 export default function LangToggle() {
   const pathname = usePathname();
   const router = useRouter();
-  const t = useTranslations("Common.language");
 
   const currentLocale =
     SUPPORTED_LOCALES.find((l) => pathname.startsWith(`/${l}`)) ?? "en";
@@ -25,17 +24,6 @@ export default function LangToggle() {
 
   return (
     <div className="flex items-center gap-2" dir="ltr">
-      {/* FA */}
-      <span
-        className={`text-xs font-bold transition-colors ${
-          isFa ? "text-foreground" : "text-muted-foreground"
-        }`}
-      >
-        FA
-      </span>
-
-      <Switch id="lang-mode" checked={!isFa} onCheckedChange={toggleLanguage} />
-
       {/* EN */}
       <span
         className={`text-xs font-bold transition-colors ${
@@ -43,6 +31,17 @@ export default function LangToggle() {
         }`}
       >
         EN
+      </span>
+
+      <Switch id="lang-mode" checked={isFa} onCheckedChange={toggleLanguage} />
+
+      {/* FA */}
+      <span
+        className={`text-xs font-bold transition-colors ${
+          isFa ? "text-foreground" : "text-muted-foreground"
+        }`}
+      >
+        FA
       </span>
 
       <Label htmlFor="lang-mode" className="sr-only">
