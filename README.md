@@ -1,36 +1,98 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🔐 Login Task – Authentication UI
 
-## Getting Started
+🌗 Dark / Light Theme · 🌍 Bilingual (EN / FA) · ⚡ Next.js App Router
 
-First, run the development server:
+---
 
+## 📖 Project Overview
+
+This project is a **small authentication UI task** developed as part of a frontend hiring assignment.  
+It showcases a modern, clean, and scalable login flow using **Email or Phone Number with OTP verification**, with a strong focus on user experience, accessibility, and maintainable code.
+
+The goal of this task is to demonstrate frontend skills, architectural decisions, and attention to detail rather than backend implementation.
+
+---
+
+## ✨ Features
+
+- 🔁 Login using **Email or Phone Number**
+- 🔐 OTP verification flow (mocked)
+- 🌍 Internationalization (English & Persian) using `next-intl`
+- 🌗 Dark / Light theme support
+- 📱 Fully responsive design
+- 🎯 Form validation with **Zod**
+- ⚡ Smooth UI animations and transitions
+- 🧩 Modular, reusable, and scalable components
+- ↔️ RTL / LTR support based on selected locale
+
+---
+
+## 🛠 Tech Stack
+
+- **Framework:** Next.js (App Router)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **UI Components:** Shadcn/ui
+- **Forms:** React Hook Form
+- **Validation:** Zod
+- **Icons:** Lucide React
+- **Theming:** next-themes
+- **Internationalization:** next-intl
+
+---
+
+## 🧠 Architecture & Implementation Details
+
+- Client-side form handling using `react-hook-form`
+- Dynamic validation schema generated with Zod based on authentication method (email or phone)
+- OTP step handled as a separate UI state with animated transitions
+- Locale-based RTL/LTR handling
+- Clean separation of concerns between UI, validation, and logic
+- Mocked asynchronous behavior to simulate real-world API requests
+- Code structure designed for easy extension and real production usage
+
+---
+
+## 🚀 Getting Started
+
+### 1. Install dependencies
+```bash
+npm install
+```
+2. Run the development server
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ⚠️ Notes
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- OTP verification is **mocked** and intended for UI demonstration only.
+- No backend service, database, or real authentication provider is connected.
+- This project focuses purely on frontend implementation and user experience.
+- Designed as a technical hiring task, not a production-ready authentication system.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🎯 Purpose of This Project
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This project was created exclusively as a **frontend technical assessment** to demonstrate:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Strong understanding of modern React & Next.js
+- Clean and maintainable code structure
+- Attention to UI/UX details
+- Form handling and validation patterns
+- Internationalization and theming support
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+## 👤 Author
+
+**Mehdi Darvishi**  
+📧 Email: mehdidarvishi2004@gmail.com
+
+
+
