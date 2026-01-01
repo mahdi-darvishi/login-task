@@ -97,13 +97,13 @@ export default function LoginForm() {
   // --- Render ---
 
   return (
-    <Card className="min-w-125 p-10">
+    <Card className="md:min-w-125 px-4 md:p-10">
       <CardHeader className="text-center">
         <CardTitle className="text-2xl font-bold">{t("welcome")}</CardTitle>
         <CardDescription>{t("subtitle")}</CardDescription>
       </CardHeader>
 
-      <CardContent className="space-y-5">
+      <CardContent className="md:space-y-4">
         {/* Extracted Social Buttons Component */}
         <AuthSocials t={t} />
 
@@ -135,14 +135,14 @@ export default function LoginForm() {
               <TabsList className="grid w-full grid-cols-2 rounded-full h-auto p-1 bg-muted">
                 <TabsTrigger
                   value="email"
-                  className="rounded-full px-5 py-4 text-xs gap-2 data-[state=active]:bg-background data-[state=active]:shadow-sm"
+                  className="rounded-full px-5 py-3 md:py-4 text-xs gap-2 data-[state=active]:bg-background data-[state=active]:shadow-sm"
                 >
                   <Mail size={14} />
                   {t("email")}
                 </TabsTrigger>
                 <TabsTrigger
                   value="phone"
-                  className="rounded-full px-5 py-4 text-xs gap-2 data-[state=active]:bg-background data-[state=active]:shadow-sm"
+                  className="rounded-full px-5 py-3 md:py-4 text-xs gap-2 data-[state=active]:bg-background data-[state=active]:shadow-sm"
                 >
                   <Smartphone size={14} />
                   {t("phone")}
@@ -220,7 +220,7 @@ export default function LoginForm() {
           {/* Submit Button */}
           <Button
             type="submit"
-            className="w-full h-11 rounded-full mt-2 font-semibold shadow-lg shadow-primary/10 hover:shadow-primary/20 transition-all"
+            className="w-full h-11 rounded-full md:mt-2 font-semibold shadow-lg shadow-primary/10 hover:shadow-primary/20 transition-all"
             disabled={isLoading}
           >
             {isLoading ? (
@@ -238,7 +238,7 @@ export default function LoginForm() {
           </Button>
 
           {/* Reset / Guest Actions */}
-          <div className="flex flex-col gap-2 pt-1">
+          <div className="flex flex-col gap-2 md:pt-1">
             {step === "otp" && (
               <Button
                 variant={"ghost"}
@@ -262,15 +262,17 @@ export default function LoginForm() {
       </CardContent>
 
       {/* Footer */}
-      <CardFooter className="flex items-center gap-1 border-t text-muted-foreground text-xs">
+      <CardFooter className="flex flex-col md:flex-row items-center gap-1 border-t text-muted-foreground text-xs">
         <span>{t("Footer.termsPrefix")}</span>
-        <Link className="underline" href={"#"}>
-          {t("Footer.terms")}
-        </Link>
-        <span>{t("Footer.and")}</span>
-        <Link className="underline" href={"#"}>
-          {t("Footer.privacy")}
-        </Link>
+        <div className="flex items-center gap-1">
+          <Link className="underline" href={"#"}>
+            {t("Footer.terms")}
+          </Link>
+          <span>{t("Footer.and")}</span>
+          <Link className="underline" href={"#"}>
+            {t("Footer.privacy")}
+          </Link>
+        </div>
       </CardFooter>
     </Card>
   );
