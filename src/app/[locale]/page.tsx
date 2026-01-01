@@ -14,7 +14,7 @@ export default async function LoginPage() {
         </div>
       </nav>
 
-      <main className="flex items-center justify-center mt-5 md:mt-0 md:min-h-screen md:-mt-24   ">
+      <main className="flex items-center justify-center mt-5  md:min-h-screen md:-mt-24">
         <AuthLogin />
       </main>
     </div>
